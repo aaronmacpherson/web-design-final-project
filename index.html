@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script>
         tailwind.config = {
@@ -75,12 +76,12 @@
                 Hi, I'm <span class="text-accent">Aaron</span>. I'm an aspiring full-stack web developer located in Nova Scotia. I'm currently pursuing any opportunities that will put my development skills to the test.
             </p>
             <div class="flex gap-2 mt-5 md:mt-12">
-                <button class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-black text-white rounded">
+                <a class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-black text-white rounded" href="https://www.linkedin.com/in/a-macpherson/" target="_blank">
                     LinkedIn <img class="inline h-[15px] sm:h-[21px]" src="/images/linkedIn.png" alt="LinkedIn logo">
-                </button>
-                <button class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-white text-black rounded">
+                </a>
+                <a class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-white text-black rounded" href="https://github.com/aaronmacpherson" target="_blank">
                     GitHub <img class="inline h-[15px] sm:h-[21px]" src="/images/github-mark.png" alt="GitHub logo">
-                </button>
+                </a>
             </div>
         </div>
         <!------------------------ home image ------------------------>
@@ -158,5 +159,15 @@
             </div>
         </section>
     </main>
+    <footer class="flex bg-white justify-between items-center h-[150px] px-10">
+            <div class="flex w-[50px] h-[60px] invisible"></div> <!-- invisible div for positioning elements to the center and right -->
+            <div class="flex flex-col items-center">
+                <a class="text-subText text-xl border-b-2" href="#">This websites source code</a>
+                <p class="text-subText text-sm">Aaron MacPherson &#169;2024</p>
+            </div>
+            <a class="flex items-center justify-center w-[50px] h-[60px] bg-accent rounded" href="#">
+                <i class="fa fa-chevron-up fa-6" aria-hidden="true"></i>
+            </a>
+    </footer>
 </body>
 </html>
