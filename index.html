@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                quicksand: ['Quicksand', 'sans-serif']
+              },
+              colors: {
+                mainBackground: "#F9FAFB",
+                subBackground: "#F3F4F7",
+                subBackgroundBorder: "#D9D9D9",
+                accent: '#54A251',
+                mainText: "#333333",
+                subText: "#7A7A7A",
+
+
+              },
+              backgroundImage: {
+                homeImage: 'url("/images/home-image.jpg")'
+              }
+            }
+          }
+        }
+      </script>
+    <title>Aaron's Portfolio</title>
+</head>
+<body class="bg-mainBackground font-quicksand">
+    <header class="relative z-[999]">
+        <nav class="flex fixed w-screen items-center justify-center px-10 bg-white/90 text-mainText text-xs lg:text-base">
+            <ul class="flex flex-col md:flex-row">
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-center w-screen md:w-full p-4" href="#">
+                        Education
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-col justify-center items-center px-10 h-[629px] w-screen bg-center bg-cover bg-no-repeat absolute bg-black/50">
+            <p class="text-white text-4xl w-3/4 font-bold">
+                Hi, I'm <span class="text-accent">Aaron</span>. I'm an aspiring full-stack web developer located in Nova Scotia. I'm currently pursuing any opportunities that will put my development skills to the test.
+            </p>
+            <div class="mt-12">
+                <button class="text-xl md:text-2xl md:p-4 bg-black text-white rounded">
+                    LinkedIn <img class="inline h-[21px]" src="/images/linkedIn.png" />
+                </button>
+                <button class="text-xl md:text-2xl md:p-4 bg-white text-black rounded">
+                    GitHub <img class="inline h-[21px]" src="/images/github-mark.png" />
+                </button>
+            </div>
+        </div>
+        <!------------------------ home page image ------------------------>
+        <div class="flex px-10 h-[629px] bg-center bg-cover bg-no-repeat bg-homeImage"></div>
+    </main>
+</body>
+</html>
