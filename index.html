@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css">
     <script>
         tailwind.config = {
           theme: {
@@ -36,32 +36,32 @@
         <nav class="flex fixed w-screen items-center justify-center bg-white/90 text-mainText text-xs lg:text-base">
             <ul class="flex flex-wrap">
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#">
                         About
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#">
                         Skills
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#projects">
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#">
                         Experience
                     </a>
                 </li>
                 <li>
-                    <a class="flex items-center justify-center md:w-full p-4 hover:text-black" href="#">
+                    <a class="flex items-center justify-center md:w-full p-4 text-subText hover:text-black" href="#">
                         Education
                     </a>
                 </li>
@@ -69,21 +69,94 @@
         </nav>
     </header>
     <main>
+        <!------------------------ home ------------------------>
         <div class="flex flex-col justify-center items-center px-10 h-[629px] w-screen bg-center bg-cover bg-no-repeat absolute bg-black/50">
             <p class="text-white text-base sm:text-2xl md:text-4xl md:w-3/4 font-bold">
                 Hi, I'm <span class="text-accent">Aaron</span>. I'm an aspiring full-stack web developer located in Nova Scotia. I'm currently pursuing any opportunities that will put my development skills to the test.
             </p>
             <div class="flex gap-2 mt-5 md:mt-12">
                 <button class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-black text-white rounded">
-                    LinkedIn <img class="inline h-[15px] sm:h-[21px]" src="/images/linkedIn.png" />
+                    LinkedIn <img class="inline h-[15px] sm:h-[21px]" src="/images/linkedIn.png" alt="LinkedIn logo">
                 </button>
                 <button class="flex flex-nowrap gap-1 text-xs items-center sm:text-base md:text-2xl p-4 bg-white text-black rounded">
-                    GitHub <img class="inline h-[15px] sm:h-[21px]" src="/images/github-mark.png" />
+                    GitHub <img class="inline h-[15px] sm:h-[21px]" src="/images/github-mark.png" alt="GitHub logo">
                 </button>
             </div>
         </div>
-        <!------------------------ home page image ------------------------>
+        <!------------------------ home image ------------------------>
         <div class="flex px-10 h-[629px] bg-center bg-cover bg-no-repeat bg-homeImage"></div>
+        <!------------------------ projects ------------------------>
+        <section id="projects" class="flex flex-col items-center my-10 gap-4 scroll-m-14">
+            <div>
+                <h2 class="projects flex flex-col items-center text-4xl font-bold after:border-b-8 after:rounded-sm after:border-b-[15px] after:w-44 after:block after:border-accent after:relative after:bottom-4 after:z-[-1]">Projects</h2>
+            </div>
+            <div class="flex w-3/4 bg-subBackground rounded border border-subBackgroundBorder">
+                <img class="hidden lg:block w-[360px] h-[242px] m-5 rounded" src="/images/weather-reporter.jpg" alt="Weather reporter">
+                <div class="flex flex-col m-5">
+                    <div class="font-bold">Weather Reporter</div>
+                    <div class="flex font-bold">
+                        Tech Stack: 
+                        <img class="w-[24px] h-[24px]" src="/images/html5.png">
+                        <img class="w-[24px] h-[24px]" src="/images/javascript.png">
+                        <img class="w-[24px] h-[24px]" src="/images/sass.png">
+                    </div>
+                    <div class="text-mainText">
+                        Client side programming school project. This
+                        application allows users to see the temperature,
+                        visibility, humidity, air pressure, and wind speed
+                        of the currently selected city from the drop-down.
+                        It integrates openweathermaps api for data fetching
+                        and the weather-icons CSS library for the icons.
+                    </div>
+                    <div class="mt-16">
+                        <a class="border-b-2 border-accent rounded-sm" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-3/4 bg-subBackground rounded border border-subBackgroundBorder">
+                <img class="hidden lg:block w-[360px] h-[242px] m-5 rounded" src="/images/product-review.jpg" alt="Weather reporter">
+                <div class="flex flex-col m-5">
+                    <div class="font-bold">Product Reviewer</div>
+                    <div class="flex font-bold">
+                        Tech Stack: 
+                        <img class="w-[24px] h-[24px]" src="/images/asp.png">
+                        <img class="w-[24px] h-[24px]" src="/images/bootstrap.png">
+                        <img class="w-[24px] h-[24px]" src="/images/mysql.png">
+                    </div>
+                    <div class="text-mainText">
+                        Web application programming school project. Users
+                        can submit a product review with a star rating, their
+                        name, and a comment. Data is saved to a MySQL
+                        database and displayed to the user when submitted.
+                    </div>
+                    <div class="mt-16">
+                        <a class="border-b-2 border-accent rounded-sm" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-3/4 bg-subBackground rounded border border-subBackgroundBorder">
+                <img class="hidden lg:block w-[360px] h-[242px] m-5 rounded" src="/images/bank-simulation.jpg" alt="Weather reporter">
+                <div class="flex flex-col m-5">
+                    <div class="font-bold">Bank Simulation</div>
+                    <div class="flex font-bold">
+                        Tech Stack: 
+                        <img class="w-[24px] h-[24px]" src="/images/java.png">
+                    </div>
+                    <div class="text-mainText">
+                        Introduction to object oriented programming  school
+                        project. The user is able to create either a savings
+                        account or an air miles account. They can then add
+                        transactions via either deposits or withdrawals as well
+                        as view already existing transactions. This application
+                        was implemented using MigLayout and the MVC 
+                        design pattern.
+                    </div>
+                    <div class="mt-16">
+                        <a class="border-b-2 border-accent rounded-sm" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
